@@ -1,0 +1,168 @@
+@charset "utf-8";
+.mainBody h1{
+    font-size:2rem;
+    border-bottom:1px solid #dfdfdf;
+    line-height:50px;
+    font-weight:400;
+    max-width:1200px;
+    margin:0 auto;
+    box-shadow:0 0 5px rgba(0,0,0,0.5);
+    text-indent:15px;
+}
+.regBox{
+    max-width:1000px;
+    margin:0 auto;
+}
+.regBox .formBox{
+    width:720px;
+    border-right:1px dotted #c7c7c7;
+    float:left;
+    margin:20px 20px 20px 0;
+    font-size:1.5rem;
+}
+.regBox .formBox .int,
+.regBox .formBox .code{
+    padding:10px 0;
+}
+.regBox .formBox label{
+    display:inline-block;
+    text-align:right;
+    width:120px;
+}
+.regBox .formBox label strong{
+    color:#c00;
+}
+.regBox .formBox .int input{
+    font-size:1.5rem;
+    width:420px;
+    border:1px solid #d3d3d3;
+    padding:5px;
+}
+.regBox .formBox .int input[type="radio"]{
+    width:auto;
+}
+.regBox .formBox .int select{
+    font-size:1.5rem;
+    width:140px;
+    border:1px solid #d3d3d3;
+    padding:5px;
+}
+.regBox .formBox .int code{
+    display:inline-block;
+    margin-left:5px;
+}
+.regBox .formBox .int code.error{
+    color:#c00;
+    background:url(../images/code_error.png) no-repeat left center;
+    text-indent:20px;
+}
+.regBox .formBox .int code.ok{
+    color:#0066FF;
+    background:url(../images/code_ok.png) no-repeat left center;
+    text-indent:20px;
+}
+.regBox .formBox .int small{
+    display:block;
+    clear:both;
+    margin-left:123px;
+    line-height:30px;
+    color:#a5a5a5;
+    font-size:1.35rem;
+}
+.regBox .formBox .code input{
+    font-size:1.5rem;
+    width:100px;
+    border:1px solid #d3d3d3;
+    padding:5px;
+}
+.regBox .formBox .code img{
+    vertical-align:middle;
+    margin:0 10px;
+}
+.regBox .formBox .code a{
+    font-size:1.35rem;
+    color:#a5a5a5;
+}
+.regBox .formBox .submit{
+    margin:40px 0 60px 124px;
+}
+.regBox .formBox .submit button{
+    width:235px;
+    height:56px;
+    text-align:center;
+    background:url(../images/colorbg.jpg) no-repeat center center;
+    background-size:cover;
+    border:none;
+    color:#fff;
+    font-size:2rem;
+    cursor:pointer;
+}
+.regBox .otherBox{
+    float:left;
+}
+
+.regBox .otherBox a img {
+    margin-right: 0.4rem;
+}
+
+.regBox h3{
+    font-size:1.5rem;
+    font-weight:400;
+}
+.regBox .formBox .int a{
+    display:inline-block;
+    color:#5e5e5e;
+    background:url(../images/user_ico.png) no-repeat left center;
+    text-indent:20px;
+    margin-left:20px;
+}
+.regBox .formBox .int a.wp{
+    background-image:url(../images/wp_ico.png);
+}
+.regBox .formBox .tip{
+    padding:5px 0 0 0;
+}
+.regBox .formBox .tip code{
+    display:inline-block;
+    margin:0 0 0 120px;
+}
+.regBox .formBox .tip code.error{
+    color:#c00;
+    background:url(../images/code_error.png) no-repeat left center;
+    text-indent:20px;
+}
+.regBox .formBox .tip label{
+    width:inherit;
+}
+.regBox .formBox .tip input{
+    vertical-align:middle;
+    margin-left:200px;
+}
+.regok{
+    font-size:2rem;
+    line-height:4rem;
+    width:950px;
+    margin:70px auto;
+}
+.regok strong{
+    color:#36a1e0;
+    margin:0 5px;
+}
+.regok span{
+    color:#c00;
+    margin-right:5px;
+}
+.regok a{
+    display:inline-block;
+    background:url(../images/colorbg.jpg) no-repeat center center;
+    background-size:cover;
+    color:#fff;
+    padding:0 15px;
+    font-size:1.6rem;
+    line-height:40px;
+    opacity:0.9;
+}
+.regok a:hover{
+    text-decoration:none;
+    opacity:1;
+}
