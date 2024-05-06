@@ -12,7 +12,3 @@ body {
     border-radius: 10px; /* 添加圓角 */
     color: #ff0000; /* 更改文字顏色為紅色 */
 }
-
-.warning p {
-    text-decoration: underline; /* 給段落文字添加底線 */
-}
