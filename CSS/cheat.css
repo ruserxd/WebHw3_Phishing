@@ -1,0 +1,18 @@
+body {
+    background-image: url('/images/bgd.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.warning {
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* 添加背景色，使文本更易讀 */
+    padding: 20px;
+    border-radius: 10px; /* 添加圓角 */
+    color: #ff0000; /* 更改文字顏色為紅色 */
+}
+
+.warning p {
+    text-decoration: underline; /* 給段落文字添加底線 */
+}
