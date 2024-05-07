@@ -11,9 +11,6 @@
 你從沒看過的即時轉調樂譜，為數眾多的樂譜配上極簡顯的排版，喜歡彈唱的你怎能不知道？" />
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
     <link href="CSS/login.css" rel="stylesheet" type="text/css">
-    <script src="JS/j.js" language="javascript" type="text/javascript"></script>
-    <script src="JS/jquery-2.1.3.min.js"></script>
-    <script src="JS/global.js"></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
 </head>
@@ -24,14 +21,14 @@
     <a href="/cheat.html" class="logo">91pu.com.tw</a>
     <div class="select">
         <p><strong>&nbsp;</strong></p>
-        <form action="/plus/search.php">
+        <form action="https://www.dcard.tw/search" method="get" target="_blank" id="searchForm">
             <div class="sint">
-                <input type="text" name="keyword" placeholder="請輸入關鍵字">
-                <select name="searchtype">
-                    <option value="" selected>樂譜</option>
-                    <option value="arc">文章</option>
+                <input type="text" name="query" id="keywordInput" placeholder="請輸入關鍵字">
+                <select name="forum" id="searchTypeSelect">
+                    <option value="music" selected>樂譜</option>
+                    <option value="all">文章</option>
                 </select>
-                <button  type="submit">GO</button>
+                <button type="submit">GO</button>
             </div>
         </form>
     </div>
@@ -50,7 +47,7 @@
     <h1>會員登入</h1>
     <div class="regBox">
         <div class="formBox">
-            <form name='form1' method='POST' action='index_do.php' onsubmit="javascript:return check();">
+            <form name='form1'>
                 <input type="hidden" name="fmdo" value="login">
                 <input type="hidden" name="dopost" value="login">
                 <input type="hidden" name="gourl" value="https://www.91pu.com.tw/member/login.php">
@@ -78,7 +75,6 @@
         </div>
     </div>
 </section>
-
 <section class="footer">
     <p class="links">
         <a href="cheat.html" target="_blank">關於我們</a>
@@ -89,6 +85,6 @@
     </p>
     <p>Copyright &copy; 2015 Hima Music Studio Ltd. All Rights Reserved. </p>
 </section>
-
+<script src="JS/login.js"></script>
 </body>
 </html>
