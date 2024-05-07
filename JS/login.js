@@ -5,12 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // 在表單提交前，將關鍵字轉換為 URI 編碼，以便在 URL 中使用
     searchForm.addEventListener('submit', function(event) {
         const keyword = keywordInput.value.trim();
+        console.log(keyword);
         if (keyword !== '') {
             const encodedKeyword = encodeURIComponent(keyword);
-            const searchType = document.getElementById('searchTypeSelect').value;
-            const forum = searchType === 'all' ? '' : searchType;
-            const searchURL = `https://www.dcard.tw/search?query=${encodedKeyword}&forum=${forum}`;
-            searchForm.action = searchURL;
+            const searchURL = `https://www.dcard.tw/search?query=${encodedKeyword}`;
+            window.location.href = searchURL; // 手動提交表單
         } else {
             // 如果關鍵字為空，阻止表單提交
             event.preventDefault();
